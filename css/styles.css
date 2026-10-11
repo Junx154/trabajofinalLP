@@ -1,3 +1,145 @@
-root{
-    --colorPrimario: #fff;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
+
+body {
+    background-color: #bfdbf7; 
+    color: #0b1b46;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    padding: 40px 20px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 800px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0.05, 0.1, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); /* Sombra sutil de tarjeta */
+}
+
+
+.Titulo {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.sub-titulo {
+    display: block;
+    font-size: 15px;
+    color: #64748b;
+    margin-top: 5px;
+}
+
+
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-row-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.form-row-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.mb-4 {
+    margin-bottom: 16px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 15px;
+    color: #042940;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+
+.radio-group {
+    display: flex;
+    gap: 32px;
+    margin-top: 8px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    color: #334155;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    accent-color: #c52225;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+
+.enviar {
+    margin-top: 32px;
+}
+
+.btn-enviar-2 {
+    background-color: #c52232;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-enviar:hover {
+    background-color: #a31618;
+}
+
+
+

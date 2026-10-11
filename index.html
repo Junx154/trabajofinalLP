@@ -1,12 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de Inscripción</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <h2>prueba</h2>
+
+    <div class="form-container">
+        <form action="php/ejercicio_01.php" method="POST" class="contact-form" >
+
+
+            <div class="form-group">
+                <label class="Titulo">Nombre del alumno</label>
+                <div class="form-row-3">
+                    <div class="input-wrapper">
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="nombre" class="sub-titulo">Nombre</label>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" id="segundo_nombre" name="segundo_nombre">
+                        <label for="segundo_nombre" class="sub-titulo">Segundo Nombre</label>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" id="apellido" name="apellido" required>
+                        <label for="apellido" class="sub-titulo">Apellido</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-row-2">
+                <div class="form-group">
+                    <label class="Titulo" for="fecha_nacimiento">Fecha de nacimiento</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="MM-DD-YYYY">
+                        <span class="icon-calendar"></span>
+                    </div>
+                    <label class="sub-label">Fecha</label>
+                </div>
+                <div class="form-group">
+                    <label class="Titulo" for="genero">Género</label>
+                    <select id="genero" name="genero">
+                        <option value="" disabled selected>Seleccione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="Titulo">Dirección</label>
+
+                <div class="input-wrapper mb-4">
+                    <input type="text" id="direccion" name="direccion" required>
+                    <label for="direccion" class="sub-titulo">Dirección de la calle</label>
+                </div>
+
+                <div class="input-wrapper mb-4">
+                    <input type="text" id="direccion_2" name="direccion_2">
+                    <label for="direccion_2" class="sub-titulo">Dirección de la calle Línea 2</label>
+                </div>
+
+                <div class="form-row-2 mb-4">
+                    <div class="input-wrapper">
+                        <input type="text" id="ciudad" name="ciudad" required>
+                        <label for="ciudad" class="sub-titulo">Ciudad</label>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" id="estado" name="estado" required>
+                        <label for="estado" class="sub-titulo">Estado / Provincia</label>
+                    </div>
+                </div>
+
+                <div class="input-wrapper">
+                    <input type="text" id="codigo_postal" name="codigo_postal">
+                    <label for="codigo_postal" class="sub-titulo">Código Postal</label>
+                </div>
+            </div>
+
+
+            <div class="form-row-2">
+                <div class="form-group">
+                    <label class="Titulo" for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="sub-titulo">ejemplo@ejemplo.com</span>
+                </div>
+                <div class="form-group">
+                    <label class="Titulo" for="telefono">Número de teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="903 234 142">
+                    <span class="sub-titulo">Favor ingrese un número de teléfono válido.</span>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="Titulo">Ha recibido otros cursos Anteriormente</label>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="cursos_previos" value="si"> Sí
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="cursos_previos" value="no"> No
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="form-row-2">
+                <div class="form-group">
+                    <label class="Titulo" for="empresa">Empresa</label>
+                    <input type="text" id="empresa" name="empresa">
+                </div>
+                <div class="form-group">
+                    <label class="Titulo" for="cursos">Cursos</label>
+                    <select id="cursos" name="cursos">
+                        <option value="" disabled selected>Seleccione</option>
+                        <option value="curso1">Curso 1</option>
+                        <option value="curso2">Curso 2</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="Titulo" for="comentarios">Comentarios adicionales</label>
+                <textarea id="comentarios" name="comentarios" rows="6"></textarea>
+            </div>
+
+
+            <div class="enviar">
+                <button type="" class="btn-enviar-2">Enviar</button>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/app.js"></script>
+
+
+
+
 
 </body>
+
 </html>
